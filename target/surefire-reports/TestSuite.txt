@@ -1,0 +1,13 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.278 s <<< FAILURE! - in TestSuite
+setUpClass(in.reqres.endpoints.executar.RunCucumberTest)  Time elapsed: 0.142 s  <<< FAILURE!
+java.lang.NoClassDefFoundError: cucumber.runtime.io.ResourceLoader
+Caused by: java.lang.ClassNotFoundException: cucumber.runtime.io.ResourceLoader
+
+runScenario(in.reqres.endpoints.executar.RunCucumberTest)  Time elapsed: 0.165 s  <<< FAILURE!
+org.testng.TestNGException: 
+
+Method public void cucumber.api.testng.AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper,cucumber.api.testng.CucumberFeatureWrapper) throws java.lang.Throwable requires a @DataProvider named : scenarios
+

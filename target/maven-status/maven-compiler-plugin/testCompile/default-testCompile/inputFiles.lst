@@ -1,0 +1,7 @@
+/home/matheus.barbachan/workspace/ReqResInApiTests/src/test/java/in/reqres/endpoints/steps/UserStep.java
+/home/matheus.barbachan/workspace/ReqResInApiTests/src/test/java/in/reqres/endpoints/actions/UserAction.java
+/home/matheus.barbachan/workspace/ReqResInApiTests/src/test/java/in/reqres/endpoints/steps/LoginStep.java
+/home/matheus.barbachan/workspace/ReqResInApiTests/src/test/java/in/reqres/endpoints/utils/BeforeAndAfterTest.java
+/home/matheus.barbachan/workspace/ReqResInApiTests/src/test/java/in/reqres/endpoints/utils/RestStep.java
+/home/matheus.barbachan/workspace/ReqResInApiTests/src/test/java/in/reqres/endpoints/executar/RunCucumberTest.java
+/home/matheus.barbachan/workspace/ReqResInApiTests/src/test/java/in/reqres/endpoints/actions/LoginAction.java

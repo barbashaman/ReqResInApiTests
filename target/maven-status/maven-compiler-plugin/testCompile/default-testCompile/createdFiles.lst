@@ -1,0 +1,7 @@
+in/reqres/endpoints/executar/RunCucumberTest.class
+in/reqres/endpoints/utils/BeforeAndAfterTest.class
+in/reqres/endpoints/steps/UserStep.class
+in/reqres/endpoints/steps/LoginStep.class
+in/reqres/endpoints/utils/RestStep.class
+in/reqres/endpoints/actions/UserAction.class
+in/reqres/endpoints/actions/LoginAction.class

@@ -1,0 +1,4 @@
+in/reqres/domain/User.class
+in/reqres/configuration/EndpointConfiguration.class
+in/reqres/domain/Login.class
+in/reqres/configuration/TipoConexaoEnum.class
