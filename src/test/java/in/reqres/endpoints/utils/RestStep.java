@@ -1,12 +1,15 @@
 package in.reqres.endpoints.utils;
 
 import in.reqres.configuration.EndpointConfiguration;
+import in.reqres.configuration.EnderecosEnum;
 import io.cucumber.java.Before;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
 import java.io.IOException;
+
+import static in.reqres.configuration.EndpointConfiguration.getUrlApi;
 
 public class RestStep {
 
@@ -27,15 +30,5 @@ public class RestStep {
 
     public Response getResponse() {
         return response;
-    }
-
-    @Before
-    public static void setUPInicial() throws IOException {
-
-        new EndpointConfiguration();
-        RestAssured.reset();
-        RestAssured.baseURI = "https://reqres.in/api/";
-
-
     }
 }

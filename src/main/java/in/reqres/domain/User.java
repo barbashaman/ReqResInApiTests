@@ -10,8 +10,17 @@ public class User {
     private String year;
     private String color;
     private String pantone_value;
+    private String job;
+    private String createdAt;
+
 
     public User() {
+    }
+
+    public User(String email, String first_name, String last_name){
+        this.email = email;
+        this.first_name = first_name;
+        this.last_name = last_name;
     }
 
     public String getId() {
@@ -76,6 +85,22 @@ public class User {
 
     public void setPantone_value(String pantone_value) {
         this.pantone_value = pantone_value;
+    }
+
+    public String getJob() {
+        return job;
+    }
+
+    public void setJob(String job) {
+        this.job = job;
+    }
+
+    public String getCreatedAt() {
+        return createdAt;
+    }
+
+    public void setCreatedAt(String createdAt) {
+        this.createdAt = createdAt;
     }
 
     @Override

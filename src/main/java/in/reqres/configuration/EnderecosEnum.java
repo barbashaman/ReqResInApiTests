@@ -1,6 +1,6 @@
 package in.reqres.configuration;
 
-public enum TipoConexaoEnum {
+public enum EnderecosEnum {
     BASEURI,
     USERS,
     UNKNOWN,

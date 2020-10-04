@@ -13,7 +13,7 @@ public class EndpointConfiguration {
         props = getProperties();
     }
 
-    public static String getUrlApi(TipoConexaoEnum endpoint) throws IOException {
+    public static String getUrlApi(EnderecosEnum endpoint) throws IOException {
         inicializaProperties();
         return props.getProperty(endpoint.toString());
     }

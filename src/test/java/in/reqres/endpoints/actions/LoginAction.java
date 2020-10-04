@@ -2,12 +2,11 @@ package in.reqres.endpoints.actions;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import in.reqres.configuration.TipoConexaoEnum;
+import in.reqres.configuration.EnderecosEnum;
 import in.reqres.domain.Login;
 import in.reqres.endpoints.utils.RestStep;
-import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
-import io.restassured.response.Response;
+import org.apache.http.HttpStatus;
 
 import java.io.IOException;
 
@@ -42,14 +41,14 @@ public class LoginAction {
 
     public void efetuarLogin() {
         try {
-            restStep.setResponse(restStep.getRequest().when().log().all().post(getUrlApi(TipoConexaoEnum.LOGIN)));
+            restStep.setResponse(restStep.getRequest().when().log().all().post(getUrlApi(EnderecosEnum.LOGIN)));
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
     public void validaLogin() {
-        restStep.getResponse().then().statusCode(200);
+        restStep.getResponse().then().statusCode(HttpStatus.SC_OK);
         String token = restStep
                 .getResponse()
                 .then().log().all()
@@ -62,7 +61,7 @@ public class LoginAction {
 
 
     public void validaUsuarioInvalido() {
-        restStep.getResponse().then().statusCode(400);
+        restStep.getResponse().then().statusCode(HttpStatus.SC_BAD_REQUEST);
         assert (
                 restStep
                         .getResponse()

@@ -23,8 +23,23 @@ public class UserStep {
         action.buscaUsuario();
     }
 
-    @Então("^o sistema retorna os dados desse usuário$")
-    public void oSistemaRetornaOsDadosDesseUsuário() {
+    @Então("^a consulta do usuário é efetuada com sucesso$")
+    public void aConsultaDoUsuarioEhEfetuadaComSucesso() {
         action.validaBuscaUsuario();
+    }
+
+    @Dado("^que são informados os dados do novo Usuário:  \"(.*?)\", \"(.*?)\", \"(.*?)\"$")
+    public void queSãoInformadosOsDadosDoNovoUsuárioEmailFirst_nameLast_name(String email, String first_name, String last_name) {
+        action.setUserCreationData(email,first_name,last_name);
+    }
+
+    @Quando("^efetuo o cadastro do usuário$")
+    public void efetuoOCadastroDoUsuário() {
+        action.cadastraUsuario();
+    }
+
+    @Então("^o usuário é inserido com sucesso$")
+    public void oUsuárioÉInseridoComSucesso() {
+        action.validaCadastroUsuario();
     }
 }
