@@ -1,5 +1,5 @@
 # ReqResInApiTests
-  Testes elaborados para o processo seletivo da Datum para atuar no cliente Getnet. 
+  Testes elaborados para o processo seletivo da Datum. 
   * Para executar os testes de API foi utilizada a linguagem de programação JAVA. 
   * Para descrever os cenários em BDD, a linguagem Gherkin. 
   * Para estruturar e executar as chamadas de serviço, bem como validar seus retornos, a biblioteca JAVA Restassured. 
